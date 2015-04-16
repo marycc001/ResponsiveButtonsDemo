@@ -1,0 +1,90 @@
+html {
+	background-color:black;
+}	
+
+body {
+	font-size:100%;
+	color:white;
+	margin: 3em 3em 3em 3em;
+}
+	
+h1 {
+	display:block;
+	min-width:5em;
+	text-align:center;
+	line-height: 2em;
+	margin-top:1em;
+	font-family:"Helvetica", Helvetica, Arial, sans-serif;
+	color:#2abb9c;
+	background:none;
+	text-decoration:none;
+}
+
+div {
+	display:inline-block;
+	text-align:right;
+	width:100%;
+}
+
+p {
+    font-size: 1.2em; 
+	font-family:"Helvetica", Helvetica, Arial, sans-serif;
+    line-height: 1.35em;
+	background:none;
+	text-decoration:none;
+	margin-top:1.2em;
+}
+
+/* Button Style */
+
+.btn {
+  display: inline-block right;
+  margin-bottom: 1rem;
+  color:#fff;
+  font-family:"Helvetica",Helvetica, Arial, sans-serif;
+  font-weight:medium;
+  padding:1em 1em 1em 1em;
+  text-align:center;
+  background-color:#2abb9c;
+  text-decoration:none;
+  border-color:none;
+  border-style:none;
+  border-width:1px;
+  border-radius:0.255rem;
+  transition:color 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+.btn + .btn {
+    margin-left: 1rem;
+}
+
+/* Button hover state overrides */
+
+.btn:hover {
+  color:#4b4444;
+  font-weight:bold;
+  background-color:0%;
+  text-decoration:none;
+  border-color:#2abb9c;
+  border-style:solid;
+  border-width:1px;
+}
+
+/* Responsive Style with Media Queries */
+  
+@media screen and (max-width: 1000px) {
+  .btn {
+    padding:0.75rem 1rem; }
+}
+
+@media screen and (max-width: 767px) {
+  .btn {
+    display:block;
+    width:100%;
+    padding:0.75rem;
+    font-size:0.9rem; }
+  
+  .btn + .btn {
+      margin-top:1rem;
+      margin-left:0; }
+}
